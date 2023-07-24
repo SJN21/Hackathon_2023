@@ -1,0 +1,97 @@
+body{
+    margin:0;
+  }
+  .box{
+    color: #0C133B;
+    text-align:center;
+    z-index:1;
+    background-image: url(./Images/crime-contact.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  height: 100%;
+  }
+  .text{
+      padding: 100px 0;
+  }
+  .box p{
+    font-size:18px;
+  }
+  .red{
+    color:#D1E0DB;
+  }
+  .redline{
+    width:100px;
+    height:3px;
+    background-color:#D1E0DB;
+    border:none;
+  }
+
+  .touch h2{
+    color: #D1E0DB;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .form{
+    background-color: transparent;
+  }
+  .form-margin{
+    margin-top: 40px;
+justify-content: center;     
+align-items: center;
+}
+
+  .left{
+    text-align:left;
+  }
+  h3{
+    font-variant:bold;
+  }
+  .redline-address{
+    border:none;
+    height:3px;
+    background-color:orangered;
+    width:140px;
+    margin-bottom:20px;
+  }
+  .address{
+    padding-top: 50px;
+  }
+  .address p{
+    font-weight:bold;
+    color: #676565;
+    margin:3px;
+  }
+  .phone-e{
+    padding:15px 0;
+  }
+  .logo img{
+    height:50px;
+    width:150px;
+    z-index:2;
+    float:left;
+    margin-top:10px;
+  }
+  .bottom-gap{
+    margin-bottom:100px;
+  }
+  /*validation css*/
+  input.ng-valid {
+    background-color:#dff0d8;
+  }
+  input.ng-invalid {
+      background-color:#f2dede;
+  }
+  input.ng-pristine{
+    background-color:white;
+  }
+  textarea.ng-invalid {
+      background-color:#f2dede;
+  }
+  textarea.ng-pristine{
+    background-color:white;
+  }
+  textarea.ng-valid {
+    background-color:#dff0d8;
+  }
+  

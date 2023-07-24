@@ -1,0 +1,233 @@
+body{
+    margin:0;
+    
+  }
+
+  .box{
+    color: #0C133B;
+    text-align:center;
+    z-index:0;
+    background-image: url(./Images/about.webp);  
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 65vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .box .image{
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 30rem;
+  }
+
+  .box h3{
+    justify-content: center;
+    margin-top: 200px;
+    align-content: center;
+    font-size: 5rem;
+    color: #0C133B;
+    /* padding: 2%; */
+    /* width: 40%; */
+    /* background-color: #EBF4F1; */
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    /* margin-left: 15%; */
+}
+
+.about p{
+    font-size: 15px;
+    color: #0C133B;
+    margin: 2%;
+    margin-left: 15%;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 30px;
+}
+
+.aboutcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 4% ;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    overflow: visible;
+    width: 300px;
+    height: 450px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    box-shadow: 0px 0px 10px 1px #0C133B;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    background-color: #D1E0DB;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #0C133B, #0C133B, #EBF4F1, #EBF4F1, transparent);
+    animation: rotation_481 2s infinite linear;
+  }
+  
+  .back-content {
+    position: absolute;
+    font-size: 30px;
+    width: 99%;
+    height: 99%;
+    background-color: #D1E0DB;
+    border-radius: 5px;
+    color: #0C133B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: black;
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .front-content .badge {
+    background-color: #D1E0DB;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  .description {
+    box-shadow: 0px 0px 10px 5px #D1E0DB;
+    width: 100%;
+    padding: 10px;
+    background-color: #EBF4F1;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 18px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title p {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #0C133B;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2s infinite linear;
+  }
+  
+  #bottom {
+    background-color: #0C133B;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #right {
+    background-color: #D1E0DB;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
